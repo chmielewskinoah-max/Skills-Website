@@ -1,0 +1,132 @@
+{
+  "timezone": "Europe/Berlin",
+  "hours": [
+    { "day": 1, "name": "Montag",     "short": "Mo", "open": "12:00", "close": "22:00" },
+    { "day": 2, "name": "Dienstag",   "short": "Di", "open": "12:00", "close": "22:00" },
+    { "day": 3, "name": "Mittwoch",   "short": "Mi", "open": "12:00", "close": "22:00" },
+    { "day": 4, "name": "Donnerstag", "short": "Do", "open": "12:00", "close": "22:00" },
+    { "day": 5, "name": "Freitag",    "short": "Fr", "open": "12:00", "close": "02:00" },
+    { "day": 6, "name": "Samstag",    "short": "Sa", "open": "14:00", "close": "04:00" },
+    { "day": 0, "name": "Sonntag",    "short": "So", "open": "14:00", "close": "22:00" }
+  ],
+  "signature": [
+    {
+      "name": "Smash Burger",
+      "text": "Cheese, Chili Cheese, Oklahoma oder Patty Melt. Single oder Double.",
+      "price": 6.50,
+      "from": true,
+      "image": "assets/img/burger",
+      "alt": "Double Smash Burger mit geschmolzenem Cheddar, Gurken und Soße im Brioche-Bun, in roter Schachtel"
+    },
+    {
+      "name": "Nashville Hot Tenders",
+      "text": "Du entscheidest, wie scharf: Medium, Hot oder Very Hot.",
+      "price": 5.50,
+      "from": true,
+      "image": "assets/img/nashville-tenders",
+      "alt": "Zwei rot gewürzte Nashville Hot Tenders mit Gurkenscheiben in einer weißen Schale"
+    },
+    {
+      "name": "Birria Tacos",
+      "text": "Zum Dippen gemacht. Birria Broth gibt’s für 1,90 € dazu.",
+      "price": 9.90,
+      "from": false,
+      "image": "assets/img/birria-tacos",
+      "alt": "Drei knusprige Birria Tacos mit Käse, Zwiebeln und Koriander, daneben ein Becher Brühe und Limetten"
+    },
+    {
+      "name": "Birria Melt",
+      "text": "Birria im Sandwich. Mit Broth zum Dippen, wenn du willst.",
+      "price": 8.90,
+      "from": false,
+      "image": "assets/img/birria-melt",
+      "alt": "Getoastetes Sandwich mit gezupftem Birria-Rind und geschmolzenem Käse, daneben ein Becher Brühe"
+    }
+  ],
+  "menu": [
+    {
+      "id": "burgers",
+      "tab": "Burgers",
+      "groups": [
+        {
+          "title": "Burgers",
+          "items": [
+            { "name": "Cheese Burger",       "price": 6.50 },
+            { "name": "Chili Cheese",        "price": 6.90 },
+            { "name": "Oklahoma",            "price": 6.90 },
+            { "name": "Patty Melt",          "price": 6.90 },
+            { "name": "Double Cheeseburger", "price": 9.50 },
+            { "name": "Double Chili Cheese", "price": 9.90 },
+            { "name": "Double Oklahoma",     "price": 9.90 },
+            { "name": "Double Patty Melt",   "price": 9.90 }
+          ],
+          "extras": [
+            { "name": "Extra Patty", "price": 3.00 },
+            { "name": "Menü",        "price": 5.00, "note": "Fries + Drink + Dip" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-birria",
+      "tab": "Chicken & Birria",
+      "banner": {
+        "image": "assets/img/banner-birria",
+        "alt": "Birria Melt mit gezupftem Rindfleisch und geschmolzenem Käse auf einem orangefarbenen Tablett"
+      },
+      "groups": [
+        {
+          "title": "Chicken",
+          "note": "Schärfe wählbar: Medium, Hot oder Very Hot",
+          "items": [
+            { "name": "Chicken Burger",       "price": 8.00 },
+            { "name": "Nashville Burger",     "price": 8.50 },
+            { "name": "Chicken Sando",        "price": 8.40 },
+            { "name": "Nashville Sando",      "price": 8.90 },
+            { "name": "2 Tenders",            "price": 5.00 },
+            { "name": "4 Tenders",            "price": 9.50 },
+            { "name": "2 Nashville Tenders",  "price": 5.50 },
+            { "name": "4 Nashville Tenders",  "price": 10.50 }
+          ]
+        },
+        {
+          "title": "Birria",
+          "items": [
+            { "name": "Birria Tacos", "price": 9.90 },
+            { "name": "Birria Melt",  "price": 8.90 }
+          ],
+          "extras": [
+            { "name": "Birria Broth", "price": 1.90 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sides",
+      "tab": "Sides, Drinks & Dips",
+      "groups": [
+        {
+          "title": "Sides",
+          "items": [
+            { "name": "Fries",                "price": 3.50 },
+            { "name": "Sweet Potato Fries",   "price": 4.90 },
+            { "name": "Coleslaw",             "price": 2.90 },
+            { "name": "Cheese Sauce (large)", "price": 2.90 }
+          ]
+        },
+        {
+          "title": "Drinks",
+          "items": [
+            { "name": "Alle Drinks", "price": 2.90 }
+          ]
+        },
+        {
+          "title": "Dips",
+          "items": [
+            { "name": "Alle Dips", "price": 1.00 }
+          ]
+        }
+      ]
+    }
+  ]
+}
